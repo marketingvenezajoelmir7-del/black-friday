@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>A Maior Black da Fronteira</title>
+  <style>
+    :root {
+      --gold: #e7bd54;
+      --gold-light: #ffe39a;
+      --bg: #090909;
+      --panel: #151515;
+      --muted: #bdb7aa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 42px 18px;
+      color: #fff;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(184,137,39,.22), transparent 42%),
+        linear-gradient(180deg, #090909, #17130b 55%, #090909);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .page { width: 100%; max-width: 560px; margin: 0 auto; }
+    header { text-align: center; margin: 12px 0 34px; }
+    .eyebrow {
+      display: inline-block; padding: 7px 13px; margin-bottom: 15px;
+      border: 1px solid rgba(231,189,84,.55); border-radius: 999px;
+      color: var(--gold-light); font-size: 11px; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase;
+    }
+    h1 {
+      margin: 0; color: var(--gold); font-size: clamp(29px, 7vw, 43px);
+      line-height: 1.02; font-weight: 900; letter-spacing: -1.5px;
+      text-transform: uppercase; text-shadow: 0 3px 24px rgba(231,189,84,.18);
+    }
+    .subtitle { margin: 14px 0 0; color: #eee; font-size: 16px; line-height: 1.5; }
+    .store { margin: 25px 0; }
+    .store-title {
+      display: flex; align-items: center; gap: 10px; margin: 0 0 13px;
+      color: var(--gold-light); font-size: 14px; font-weight: 800;
+      letter-spacing: 1.2px; text-transform: uppercase;
+    }
+    .store-title::after { content: ""; height: 1px; flex: 1; background: rgba(231,189,84,.35); }
+    .contact {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      margin: 10px 0; padding: 17px 16px; border: 1px solid rgba(231,189,84,.22);
+      border-radius: 13px; background: linear-gradient(135deg, rgba(34,31,24,.98), rgba(17,17,17,.98));
+      box-shadow: 0 8px 22px rgba(0,0,0,.2);
+    }
+    .name { font-size: 17px; font-weight: 800; letter-spacing: .2px; }
+    .cta {
+      flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center;
+      min-height: 39px; padding: 0 13px; border-radius: 8px;
+      background: var(--gold); color: #17120a; text-decoration: none;
+      font-size: 11px; font-weight: 900; letter-spacing: .45px;
+      transition: transform .15s ease, background .15s ease;
+    }
+    .cta:hover { transform: translateY(-2px); background: var(--gold-light); }
+    footer { margin-top: 35px; text-align: center; color: #8f887b; font-size: 11px; letter-spacing: 1px; }
+    @media (max-width: 390px) {
+      body { padding: 30px 13px; }
+      .contact { padding: 14px 12px; }
+      .name { font-size: 15px; }
+      .cta { padding: 0 10px; font-size: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <span class="eyebrow">Ofertas especiais</span>
+      <h1>A Maior Black<br>da Fronteira</h1>
+      <p class="subtitle">Fale agora com um de nossos consultores!</p>
+    </header>
+
+    <section class="store" aria-labelledby="centro">
+      <h2 class="store-title" id="centro">🏪 Loja — Centro</h2>
+      <div class="contact">
+        <span class="name">Vanderlei</span>
+        <a class="cta" href="https://wa.me/5567998193924" target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a>
+      </div>
+      <div class="contact">
+        <span class="name">Gerson</span>
+        <a class="cta" href="https://wa.me/5567991529036" target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a>
+      </div>
+      <div class="contact">
+        <span class="name">Elvio</span>
+        <a class="cta" href="https://wa.me/5567992440028" target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a>
+      </div>
+      <div class="contact">
+        <span class="name">Luciano</span>
+        <a class="cta" href="https://wa.me/5567993015050" target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a>
+      </div>
+    </section>
+
+    <section class="store" aria-labelledby="marambaia">
+      <h2 class="store-title" id="marambaia">🏪 Loja — Marambaia</h2>
+      <div class="contact">
+        <span class="name">Eduardo</span>
+        <a class="cta" href="https://wa.me/5567998972899" target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a>
+      </div>
+    </section>
+
+    <footer>LOJAS VENEZA · BLACK FRONTEIRA</footer>
+  </main>
+</body>
+</html>
